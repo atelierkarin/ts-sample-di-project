@@ -41,7 +41,7 @@
       [
         "./node_modules/jest-html-reporter",
         {
-          "pageTitle": "TCP Unit Test Report"
+          "pageTitle": "Sample DI Project Report"
         }
       ]
     ],
