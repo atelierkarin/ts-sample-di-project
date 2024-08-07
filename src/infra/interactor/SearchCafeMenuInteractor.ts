@@ -13,8 +13,8 @@ export default class SearchCafeMenuInteractor implements ISearchCafeMenuUseCase 
   private _rabbitHouseMenuRepository: ICafeMenuRepository;
 
   public constructor(
-    @inject(TYPES.ICafeMenuRepository) @tagged("shop", "Amausaan") amausaanMenuRepository: ICafeMenuRepository,
-    @inject(TYPES.ICafeMenuRepository) @tagged("shop", "RabbitHouse") rabbitHouseMenuRepository: ICafeMenuRepository
+    @inject(TYPES.ICafeMenuRepository) @tagged("shop", "Amausaan") private amausaanMenuRepository: ICafeMenuRepository,
+    @inject(TYPES.ICafeMenuRepository) @tagged("shop", "RabbitHouse") private rabbitHouseMenuRepository: ICafeMenuRepository
   ) {
     this._amausaanMenuRepository = amausaanMenuRepository;
     this._rabbitHouseMenuRepository = rabbitHouseMenuRepository;

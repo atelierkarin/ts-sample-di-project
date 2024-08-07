@@ -10,7 +10,7 @@ export default class KigurumiCafeMenuController implements ICafeMenuController {
   private _searchCafeMenuUseCase: ISearchCafeMenuUseCase;
 
   public constructor(
-    @inject(TYPES.ISearchCafeMenuUseCase) searchCafeMenuUseCase: ISearchCafeMenuUseCase
+    @inject(TYPES.ISearchCafeMenuUseCase) private searchCafeMenuUseCase: ISearchCafeMenuUseCase
   ) {
     this._searchCafeMenuUseCase = searchCafeMenuUseCase;
   }
